@@ -1,0 +1,26 @@
+{
+  "name": "sort-object-list",
+  "version": "0.0.1",
+  "description": "To sort an array of objects by certain property.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaychsu/sort-object-list.git"
+  },
+  "keywords": [
+    "react",
+    "react-native",
+    "javascript",
+    "sort",
+    "object-list"
+  ],
+  "author": "Jaych Su",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jaychsu/sort-object-list/issues"
+  },
+  "homepage": "https://github.com/jaychsu/sort-object-list#readme"
+}
