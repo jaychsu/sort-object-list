@@ -21,5 +21,10 @@
   "bugs": {
     "url": "https://github.com/jaychsu/sort-object-list/issues"
   },
-  "homepage": "https://github.com/jaychsu/sort-object-list#readme"
+  "homepage": "https://github.com/jaychsu/sort-object-list#readme",
+  "dependencies": {
+    "prop-types": "^15.5.10",
+    "react": "^15.6.1",
+    "react-native": "^0.47.1"
+  }
 }
