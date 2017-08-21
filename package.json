@@ -11,11 +11,10 @@
     "url": "git+https://github.com/jaychsu/sort-object-list.git"
   },
   "keywords": [
-    "react",
-    "react-native",
-    "javascript",
     "sort",
-    "object-list"
+    "object-list",
+    "javascript",
+    "react-native"
   ],
   "author": "Jaych Su",
   "license": "MIT",
