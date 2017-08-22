@@ -1,13 +1,19 @@
 sort-object-list
 ======
 
-
+[![GitHub release](https://img.shields.io/github/release/jaychsu/sort-object-list.svg)](https://github.com/jaychsu/sort-object-list/releases)
+[![npm](https://img.shields.io/npm/dm/sort-object-list.svg)](https://www.npmjs.com/package/sort-object-list)
+[![Travis](https://img.shields.io/travis/jaychsu/sort-object-list.svg)](https://travis-ci.org/jaychsu/sort-object-list)
+[![Maintenance](https://img.shields.io/maintenance/yes/2017.svg)](https://github.com/jaychsu/sort-object-list)
+[![license](https://img.shields.io/github/license/jaychsu/sort-object-list.svg)](https://github.com/jaychsu/sort-object-list/blob/master/LICENSE)
 
 ## Usage
 
 ### To sort an array of plain object
 
 ```javascript
+import sortObjectList from 'sort-object-list'
+
 sortObjectList(
   [ 'B', 2, null, 1, undefined ],
   { sortBy: 'key' }
