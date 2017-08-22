@@ -1,34 +1,46 @@
 sort-object-list
 ======
 
+
+
 ## Usage
 
 ### To sort an array of plain object
 
 ```javascript
 sortObjectList(
-  ["B",2,null,1,null,"A",100,null,"a",3,"b",null,5],
-  { sortBy: "what_ever" }
+  [ 'B', 2, null, 1, undefined ],
+  { sortBy: 'key' }
 )
-// return what input
+// [ 'B', 2, null, 1, undefined ]
 
 sortObjectList(
-  [{"a":2},{"a":1},{"a":100},{"a":0}],
-  { sortBy: "a", isDecreasing: true }
+  [ { key: 2 }, { key: 1 }, { key: 100 }, { key: 0 } ],
+  { sortBy: 'key', isDecreasing: true }
 )
-// [{"a":100},{"a":2},{"a":1},{"a":0}]
+// [ { key: 100 }, { key: 2 }, { key: 1 }, { key: 0 } ]
 
 sortObjectList(
-  [{"key":"Z"},{"key":"G"},{"key":"B"},{"key":"A"}],
-  { sortBy: "key" }
+  [ { key: 'Z' }, { key: 'G' }, { key: 'B' }, { key: 'A' } ],
+  { sortBy: 'key' }
 )
-// [{"key":"A"},{"key":"B"},{"key":"G"},{"key":"Z"}]
+// [ { key: 'A' }, { key: 'B' }, { key: 'G' }, { key: 'Z' } ]
 
 sortObjectList(
-  [{"a":{"b":3}},{"a":{"b":1}},{"a":{"b":4}},{"a":{"b":0}}],
-  { sortBy(obj) { return obj.a.b; } }
+  [
+    { key: { something: 3 } },
+    { key: { something: 1 } },
+    { key: { something: 4 } },
+    { key: { something: 0 } },
+  ],
+  { sortBy(object) { return object.key.something } }
 )
-// [{"a":{"b":0}},{"a":{"b":1}},{"a":{"b":3}},{"a":{"b":4}}]
+// [
+//   { key: { something: 0 } },
+//   { key: { something: 1 } },
+//   { key: { something: 3 } },
+//   { key: { something: 4 } },
+// ]
 ```
 
 ### To sort children in `react-native`
