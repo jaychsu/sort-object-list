@@ -11,10 +11,10 @@ export default function sortObjectList(objectList, {
 }) {
   if ( !isArray(objectList)
     || !sortBy
-    || Array.prototype.some.call(objectList, object => !object)
+    || Array.prototype.some.call(objectList, object => !isPlainObject(object))
   ) return objectList
 
-  const fetchProp = (object) => (typeof sortBy === 'function')
+  const fetchProp = object => (typeof sortBy === 'function')
     ? sortBy(object)
     : object[sortBy]
 
@@ -31,4 +31,8 @@ export default function sortObjectList(objectList, {
 
 function isArray(arr) {
   return Object.prototype.toString.call(arr) === '[object Array]'
+}
+
+function isPlainObject(obj) {
+  return Object.prototype.toString.call(obj) === '[object Object]'
 }
