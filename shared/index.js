@@ -1,5 +1,5 @@
 /**
- * To sort an array of objects by certain property.
+ * To sort an array of object by certain property.
  * @param  {Array<Object>}    objectList
  * @param  {String|Function}  options.sortBy
  * @param  {Boolean}          options.isDecreasing
