@@ -4,6 +4,8 @@ import { View } from 'react-native'
 
 import sortObjectList from '../shared'
 
+export const SORT_BY = 'order'
+
 function Sorter({
   style,
   children,
@@ -12,7 +14,7 @@ function Sorter({
     <View style={style}>
       { sortObjectList(children, {
           sortBy(node) {
-            return node.props.order
+            return node.props[SORT_BY]
           },
         })
       }
