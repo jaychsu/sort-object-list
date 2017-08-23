@@ -15,7 +15,7 @@ describe('helper `sortObjectList`', () => {
   let result
 
   it('should return the original input if payload is not an array', () => {
-    payload = { key: 1 }
+    payload = { a: 1 }
 
     expect(sortObjectList(null, commonSortRef)).to.equal(null)
     expect(sortObjectList(1, commonSortRef)).to.equal(1)
