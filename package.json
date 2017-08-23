@@ -4,6 +4,7 @@
   "description": "To sort an array of object by certain property.",
   "main": "index.js",
   "scripts": {
+    "build": "babel ./index.js -d ./es5",
     "test": "mocha --require react-native-mock/mock.js --compilers js:babel-core/register --recursive **/*.test.js"
   },
   "repository": {
@@ -23,19 +24,20 @@
   },
   "homepage": "https://github.com/jaychsu/sort-object-list#readme",
   "dependencies": {
-    "prop-types": "^15.5.10",
-    "react": "^15.6.1",
-    "react-native": "^0.47.1"
+    "prop-types": "^15.5.10"
   },
   "devDependencies": {
-    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
     "babel-jest": "^20.0.3",
     "babel-preset-airbnb": "^2.4.0",
+    "babel-preset-env": "^1.6.0",
     "chai": "^4.1.1",
     "enzyme": "^2.9.1",
     "mocha": "^3.5.0",
+    "react": "15.6.1",
     "react-addons-test-utils": "^15.6.0",
     "react-dom": "^15.6.1",
+    "react-native": "0.47.1",
     "react-native-mock": "^0.3.1"
   }
 }
