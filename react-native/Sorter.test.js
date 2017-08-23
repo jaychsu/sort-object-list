@@ -19,7 +19,7 @@ describe('<Sorter />', () => {
     expect(wrapper.children().length).to.equal(3)
   })
 
-  it('should sort children by its `order` prop', () => {
+  it(`should sort children by its '${SORT_BY}' prop`, () => {
     expect(wrapper.childAt(0).props().children).to.equal('A')
     expect(wrapper.childAt(1).props().children).to.equal('B')
     expect(wrapper.childAt(2).props().children).to.equal('C')
