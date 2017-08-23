@@ -60,7 +60,7 @@ sortObjectList(
 ### To sort children in `react-native`
 
 ```javascript
-import { Sorter } from 'sort-object-list'
+import { Sorter } from 'sort-object-list/react-native'
 
 <Sorter style={{...}}>
     <Text order={3}>B</Text>
