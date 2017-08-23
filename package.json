@@ -22,9 +22,11 @@
   "bugs": {
     "url": "https://github.com/jaychsu/sort-object-list/issues"
   },
-  "homepage": "https://github.com/jaychsu/sort-object-list#readme",
+  "homepage": "https://github.com/jaychsu/sort-object-list",
   "dependencies": {
-    "prop-types": "^15.5.10"
+    "prop-types": ">=15",
+    "react": ">=15",
+    "react-native": ">=0.44"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -34,10 +36,8 @@
     "chai": "^4.1.1",
     "enzyme": "^2.9.1",
     "mocha": "^3.5.0",
-    "react": "15.6.1",
     "react-addons-test-utils": "^15.6.0",
     "react-dom": "^15.6.1",
-    "react-native": "0.47.1",
     "react-native-mock": "^0.3.1"
   }
 }
