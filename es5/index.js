@@ -1,11 +1,13 @@
+(function() {
+
 'use strict';
 
-if (window) {
+if (typeof window !== 'undefined') {
   if (window.sortObjectList) {
     throw new Error('`window.sortObjectList` could not assigned.');
-    return;
+  } else {
+    window.sortObjectList = sortObjectList;
   }
-  window.sortObjectList = sortObjectList;
 } else {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -51,3 +53,5 @@ function isArray(arr) {
 function isPlainObject(obj) {
   return Object.prototype.toString.call(obj) === '[object Object]';
 }
+
+})();
