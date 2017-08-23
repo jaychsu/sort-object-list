@@ -7,6 +7,14 @@ sort-object-list
 [![Maintenance](https://img.shields.io/maintenance/yes/2017.svg)](https://github.com/jaychsu/sort-object-list)
 [![license](https://img.shields.io/github/license/jaychsu/sort-object-list.svg)](https://github.com/jaychsu/sort-object-list/blob/master/LICENSE)
 
+## To import component
+
+Use any of the ways below to import
+
+- `import sortObjectList from 'sort-object-list'`
+- `var sortObjectList = require('sort-object-list/es5').default`
+- `<script type="text/javascript" src="@node_modules/sort-object-list/es5/index.js"></script>`
+
 ## Usage
 
 ### To sort an array of plain object
