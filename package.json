@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "babel ./index.js -d ./es5",
-    "test": "mocha --require react-native-mock/mock.js --compilers js:babel-core/register --recursive **/*.test.js"
+    "test": "mocha --require react-native-mock/mock.js --compilers js:babel-core/register --recursive *.test.js --recursive **/*.test.js"
   },
   "repository": {
     "type": "git",
